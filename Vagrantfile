@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
 
     server.vm.host_name = 'server'
     server.vm.network :private_network, ip: "192.168.56.11"
-    server.vm.provision "shell", name: "Init script", path: "cript.sh"
+    server.vm.provision "shell", name: "Init script", path: "script.sh"
   end
 
 end
